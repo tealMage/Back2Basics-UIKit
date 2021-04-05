@@ -1,0 +1,45 @@
+PODS:
+  - Kingfisher (5.13.0):
+    - Kingfisher/Core (= 5.13.0)
+  - Kingfisher/Core (5.13.0)
+  - OCMock (3.8.1)
+  - RxCocoa (6.1.0):
+    - RxRelay (= 6.1.0)
+    - RxSwift (= 6.1.0)
+  - RxRelay (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxSwift (6.1.0)
+  - RxTest (6.1.0):
+    - RxSwift (= 6.1.0)
+  - SwiftLint (0.42.0)
+
+DEPENDENCIES:
+  - Kingfisher (= 5.13.0)
+  - OCMock (~> 3.8)
+  - RxCocoa (~> 6.1)
+  - RxSwift (~> 6.1)
+  - RxTest (~> 6.1)
+  - SwiftLint (~> 0.42)
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - OCMock
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - RxTest
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Kingfisher: 0d334cada987fcddbe9b5cec516406e1ee9d4748
+  OCMock: 29f6e52085b4e7d9b075cbf03ed7c3112f82f934
+  RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
+  RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
+  RxTest: 9d26616eaff4a7e75f4ecae9b2c24840f2e8218d
+  SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
+
+PODFILE CHECKSUM: 71a64208adf5a9f23e9310e1685d7b8957d3234c
+
+COCOAPODS: 1.10.1

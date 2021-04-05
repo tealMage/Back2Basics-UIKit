@@ -1,0 +1,19 @@
+
+[
+    {
+        "guid": "a5b895c2-37bb-4f27-9ba8-72bec6040c1d",
+        "username": "Crab",
+        "description": "Crab Fun Event",
+        "url": "http://www.google.com"
+    }, {
+        "guid": "f970b17f-d086-4cc5-a63b-79d6a41d124c",
+        "username": "Ocean",
+        "description": "Ocean Fun Event",
+        "url": "http://www.google.com"
+    }, {
+        "guid": "e846f274-e187-4275-a2f8-a734927aad69",
+        "username": "Norfolk",
+        "description": "Norfolk Fun Event",
+        "url": "http://www.google.com"
+    }
+]

@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Back2Basics
+
+  Created by Adam Sterrett on 4/4/21.
+  
+*/
+
+
+"Button_Try_Again" = "Try Again";
+"Home_ViewController_Title" = "Home";
+"Influencer_ViewController_Title" = "Influencers";
+"OK" = "OK";
+"Error" = "Error";
+"Error_Request_Cancelled" = "Request Cancelled";
+"Alert_Network_No_Connection" = "No Network Connection";
+"Error_unknown" = "Unknown Error";

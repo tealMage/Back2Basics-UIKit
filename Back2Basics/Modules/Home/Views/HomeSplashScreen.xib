@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeSplashScreen" customModule="Back2Basics" customModuleProvider="target">
+            <connections>
+                <outlet property="containerStackView" destination="iNu-kG-T0a" id="Z0Y-p4-TPq"/>
+                <outlet property="messageLabel" destination="1GN-c0-Vhf" id="xMx-di-aiX"/>
+                <outlet property="retryButton" destination="kLH-sT-Kzb" id="Q1F-kl-P9y"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e2E-da-7oS">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="iNu-kG-T0a">
+                    <rect key="frame" x="16" y="414" width="382" height="68.333333333333314"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GN-c0-Vhf">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="20.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="88m-p8-niG">
+                            <rect key="frame" x="0.0" y="20.333333333333314" width="382" height="48"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLH-sT-Kzb" customClass="StyleButton" customModule="Back2Basics" customModuleProvider="target">
+                                    <rect key="frame" x="103" y="0.0" width="176" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="176" id="6oZ-S9-6f4"/>
+                                        <constraint firstAttribute="height" constant="48" id="HiS-l3-Q4h"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="kLH-sT-Kzb" firstAttribute="top" secondItem="88m-p8-niG" secondAttribute="top" id="Ghg-gU-roI"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kLH-sT-Kzb" secondAttribute="trailing" id="Hcr-4a-Yit"/>
+                                <constraint firstItem="kLH-sT-Kzb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="88m-p8-niG" secondAttribute="leading" id="MGF-Gq-EGT"/>
+                                <constraint firstItem="kLH-sT-Kzb" firstAttribute="centerX" secondItem="88m-p8-niG" secondAttribute="centerX" id="VV8-qJ-zT8"/>
+                                <constraint firstAttribute="bottom" secondItem="kLH-sT-Kzb" secondAttribute="bottom" id="grP-MV-YUG"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="iNu-kG-T0a" firstAttribute="centerY" secondItem="e2E-da-7oS" secondAttribute="centerY" id="QF2-Kf-Zsq"/>
+                <constraint firstAttribute="trailing" secondItem="iNu-kG-T0a" secondAttribute="trailing" constant="16" id="T5N-FX-sBe"/>
+                <constraint firstItem="iNu-kG-T0a" firstAttribute="centerX" secondItem="e2E-da-7oS" secondAttribute="centerX" id="Xxg-sh-8as"/>
+                <constraint firstItem="iNu-kG-T0a" firstAttribute="leading" secondItem="e2E-da-7oS" secondAttribute="leading" constant="16" id="Z7N-td-33m"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="53.623188405797109" y="48.883928571428569"/>
+        </view>
+    </objects>
+</document>

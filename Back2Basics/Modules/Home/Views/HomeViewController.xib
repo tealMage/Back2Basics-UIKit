@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Back2Basics" customModuleProvider="target">
+            <connections>
+                <outlet property="splashScreen" destination="GmS-5w-oB0" id="J2P-fL-ASB"/>
+                <outlet property="tableView" destination="EaP-8B-9kd" id="EFx-AS-drY"/>
+                <outlet property="view" destination="tUz-GH-fFQ" id="WOT-Lb-4Ye"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tUz-GH-fFQ">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EaP-8B-9kd">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GmS-5w-oB0" userLabel="Home Splash Screen" customClass="HomeSplashScreen" customModule="Back2Basics" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="rnm-Bw-Z3c"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="EaP-8B-9kd" secondAttribute="bottom" id="0oJ-cj-R3w"/>
+                <constraint firstItem="GmS-5w-oB0" firstAttribute="top" secondItem="rnm-Bw-Z3c" secondAttribute="top" id="27L-ib-DhC"/>
+                <constraint firstAttribute="bottom" secondItem="GmS-5w-oB0" secondAttribute="bottom" id="3iL-65-A3j"/>
+                <constraint firstItem="EaP-8B-9kd" firstAttribute="top" secondItem="rnm-Bw-Z3c" secondAttribute="top" id="Nfr-DX-pcD"/>
+                <constraint firstAttribute="trailing" secondItem="GmS-5w-oB0" secondAttribute="trailing" id="OXy-Bd-FMa"/>
+                <constraint firstItem="EaP-8B-9kd" firstAttribute="leading" secondItem="tUz-GH-fFQ" secondAttribute="leading" id="Reh-h5-qKt"/>
+                <constraint firstItem="GmS-5w-oB0" firstAttribute="leading" secondItem="tUz-GH-fFQ" secondAttribute="leading" id="sPL-dL-ISQ"/>
+                <constraint firstAttribute="trailing" secondItem="EaP-8B-9kd" secondAttribute="trailing" id="zzd-fF-BBz"/>
+            </constraints>
+            <point key="canvasLocation" x="52" y="123"/>
+        </view>
+    </objects>
+</document>
