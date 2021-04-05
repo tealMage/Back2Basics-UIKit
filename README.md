@@ -1,6 +1,27 @@
 # Back2Basics-UIKit
 
-Basic project to test good coding practices in iOS using UIKit. The project designed to establish a basline of features to test architecture or coding practices.
+WIP Basic project to test good coding practices in iOS using UIKit. The project designed to establish a basline of features to test architecture or coding practices.
+
+## Architecture
+
+* MVVM
+* Coordinators
+
+## UI
+
+* Autolayout
+* Interface Builder
+* Nib/Xib
+* RxCocoa
+
+## Libraries
+
+* RxSwift
+* RxCocoa
+* RxTest
+* Kingfisher
+* SwiftLint
+* OCMock
 
 ## Getting Started
 
