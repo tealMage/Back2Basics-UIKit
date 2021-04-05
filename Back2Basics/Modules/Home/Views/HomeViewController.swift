@@ -133,7 +133,7 @@ private extension HomeViewController {
                     self.rowItems = influencers
                     self.tableView.reloadData()
                 case .failed(let message):
-                    owner.alertController.showOkAlertWithTitle(NSLocalizedString("Error", comment: "Indicating a mistake has been made") , message: message, presentingViewController: self) {
+                    owner.alertController.showOkAlertWithTitle(NSLocalizedString("Error", comment: "Indicating a mistake has been made"), message: message, presentingViewController: self) {
                     }
                     owner.activityIndicator.hide()
                 }
@@ -152,7 +152,6 @@ private extension HomeViewController {
     }
     
 }
-
 
 extension HomeViewController: HomeSplashScreenDelegate {
     func didSelectRetry(in view: HomeSplashScreen) {

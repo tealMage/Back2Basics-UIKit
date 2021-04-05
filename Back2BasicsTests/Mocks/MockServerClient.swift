@@ -25,14 +25,18 @@ class MockServerClient: ServerClient {
         session = URLSession(configuration: URLSessionConfiguration.default)
     }
 
-    func handleResponse<T: Decodable>(request: URLRequest, response: URLResponse?, data: Data, single: (SingleEvent<T>) -> Void) {}
+    func handleResponse<T: Decodable>(request: URLRequest,
+                                      response: URLResponse?,
+                                      data: Data,
+                                      single: (SingleEvent<T>) -> Void) {}
 
     func addParameters(to request: inout URLRequest, service: APIService) throws {}
-    
+
     func request<T: Decodable>(_ service: APIService) -> Single<T> {
         hasStartedRequest = true
         calledService = service
 
-        return RxHelpers.singleWithMockValue(value: expectedResponse as? T, error: responseError ?? NetworkError.unknown)
+        return RxHelpers.singleWithMockValue(value: expectedResponse as? T,
+                                             error: responseError ?? NetworkError.unknown)
     }
 }

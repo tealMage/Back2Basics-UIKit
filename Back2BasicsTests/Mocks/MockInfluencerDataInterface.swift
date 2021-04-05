@@ -11,9 +11,7 @@ import RxSwift
 @testable import Back2Basics
 
 class MockInfluencerDataInterface: InfluencerDataInterface {
- 
-    
-    
+
     var didCallFetchBillboards = false
 
     var expectedResonse: [Influencer]?

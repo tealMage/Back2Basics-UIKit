@@ -33,14 +33,13 @@ class MockLocationManagerInterface: LocationManagerInterface {
     var locationServicesEnabled = false
     var locationServicesAllowAlwaysEnabled = false
     var locationServicesPermissionIsUndetermined = false
-    
+
     var authorizationStatusString = ""
     var preciseLocationEnabled = false
     var searchedLocation: CLLocation?
 
     func isLastLocation(greaterThan date: Date) -> Bool { return false }
 
-  
     func startUpdatingLocation() { didCallStartLocationUpdates = true }
     func stopUpdatingLocation() { didCallStopLocationUpdates = true }
 }

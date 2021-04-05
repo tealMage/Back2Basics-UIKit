@@ -5,8 +5,6 @@
 //  Created by Adam Sterrett on 3/10/21.
 //
 
-
-
 import Foundation
 import UIKit
 import Kingfisher
@@ -76,4 +74,3 @@ private extension InfluencerCell {
         }
     }
 }
-

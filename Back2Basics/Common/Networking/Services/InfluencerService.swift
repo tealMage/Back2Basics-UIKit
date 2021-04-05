@@ -12,8 +12,7 @@ enum InfluencerService: APIService, Equatable {
     
     case fetchNearbyInfluencers(CLLocation)
     case fetchFeaturedInfluencers
-    
-    
+
     var path: String {
         switch self {
         case .fetchNearbyInfluencers:

@@ -54,7 +54,7 @@ class InfluencerViewController: UIViewController {
         viewModel.closeInfluencerView()
     }
     
-    func setupUsernameLabel()  {
+    func setupUsernameLabel() {
         usernameLabel.text = "@\(String(describing: influencer.username))"
     }
     

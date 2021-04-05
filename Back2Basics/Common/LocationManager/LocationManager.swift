@@ -39,7 +39,6 @@ class LocationManager: NSObject, LocationManagerInterface {
         guard CLLocationManager.locationServicesEnabled() else { return false }
         return CLLocationManager.authorizationStatus() == .authorizedAlways
     }
-    
 
     var authorizationStatusString: String {
         switch CLLocationManager.authorizationStatus() {
