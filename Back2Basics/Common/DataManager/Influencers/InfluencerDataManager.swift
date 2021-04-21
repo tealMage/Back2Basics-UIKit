@@ -22,13 +22,11 @@ struct InfluencerDataManager: InfluencerDataInterface {
     }
 
     func fetchNearbyInfluencers() -> Single<[Influencer]> {
-        // Remove to test api
-        return Single.just([Influencer(guid: "dsafsadf", name: "leet", description: "Influencer looking for the best food dishes ", url: URL(string: "https://scx1.b-cdn.net/csz/news/800a/2016/howcuttingdo.jpg")!)])
-        // Real API Call
-        //        guard let location = locationManagerInterface.deviceLocation, location.horizontalAccuracy > 0 else {
-        //            return serverClient.request(InfluencerService.fetchFeaturedInfluencers)
-        //          }
-        //        return serverClient.request(InfluencerService.fetchNearbyInfluencers(location))
+      guard let location = locationManagerInterface.deviceLocation else {
+        return serverClient.request(InfluencerService.fetchFeaturedInfluencers)
+      }
+
+      return serverClient.request(InfluencerService.fetchNearbyInfluencers(location))
     }
 }
  

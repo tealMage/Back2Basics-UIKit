@@ -1,0 +1,38 @@
+{
+    "fetchFeaturedInfluencers": [
+        {
+            "guid": "a5b895c2-37bb-4f27-9ba8-72bec6040c1d",
+            "username": "leet",
+            "description": "Programmer Channel",
+            "url": "https://picsum.photos/512"
+        }, {
+            "guid": "f970b17f-d086-4cc5-a63b-79d6a41d124c",
+            "username": "cat",
+            "description": "Cat Channel",
+            "url": "https://picsum.photos/512"
+        }, {
+            "guid": "e846f274-e187-4275-a2f8-a734927aad69",
+            "username": "tree",
+            "description": "Evironmental Channel",
+            "url": "https://picsum.photos/512"
+        }
+    ],
+    "nearbyInfluencer": [
+        {
+            "guid": "a5b895c2-37bb-4f27-9ba8-72bec6040c1d",
+            "username": "leet",
+            "description": "Programmer Channel",
+            "url": "https://picsum.photos/512"
+        }, {
+            "guid": "f970b17f-d086-4cc5-a63b-79d6a41d124c",
+            "username": "cat",
+            "description": "Cat Channel",
+            "url": "https://picsum.photos/512"
+        }, {
+            "guid": "e846f274-e187-4275-a2f8-a734927aad69",
+            "username": "tree",
+            "description": "Evironmental Channel",
+            "url": "https://picsum.photos/512"
+        }
+    ]
+  }

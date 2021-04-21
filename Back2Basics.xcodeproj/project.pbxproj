@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4A1119470931A0F8F50EDBC7 /* Pods_Back2BasicsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27787F2B775D2A55FBF71ACE /* Pods_Back2BasicsTests.framework */; };
+		7731E80E2630606A00E124BF /* InfluencerDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731E80D2630606A00E124BF /* InfluencerDataManagerTests.swift */; };
+		7731E8162630885E00E124BF /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731E8152630885D00E124BF /* HomeViewModelTests.swift */; };
+		7731E81B26308A4300E124BF /* MockHomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731E81A26308A4300E124BF /* MockHomeCoordinator.swift */; };
 		7744C8A1261A93E600C83781 /* Back2BasicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7744C8A0261A93E600C83781 /* Back2BasicsUITests.swift */; };
 		775631CA2619EC3E00D87910 /* HomeSplashScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 775631C92619EC3E00D87910 /* HomeSplashScreen.xib */; };
 		775631FF2619EE6600D87910 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 775631FE2619EE6600D87910 /* HomeViewController.xib */; };
@@ -112,6 +115,9 @@
 		29151C7118D628EAD93BA237 /* Pods-Back2Basics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Back2Basics.release.xcconfig"; path = "Target Support Files/Pods-Back2Basics/Pods-Back2Basics.release.xcconfig"; sourceTree = "<group>"; };
 		2D7D8B8B89FAC8E19A27F9F6 /* Pods-ExpertChowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpertChowTests.debug.xcconfig"; path = "Target Support Files/Pods-ExpertChowTests/Pods-ExpertChowTests.debug.xcconfig"; sourceTree = "<group>"; };
 		46A6948B1275EFB06EB18079 /* Pods-Back2BasicsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Back2BasicsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Back2BasicsUITests/Pods-Back2BasicsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7731E80D2630606A00E124BF /* InfluencerDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfluencerDataManagerTests.swift; sourceTree = "<group>"; };
+		7731E8152630885D00E124BF /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		7731E81A26308A4300E124BF /* MockHomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeCoordinator.swift; sourceTree = "<group>"; };
 		7744C89F261A93E500C83781 /* Back2BasicsUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Back2BasicsUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		7744C8A0261A93E600C83781 /* Back2BasicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Back2BasicsUITests.swift; sourceTree = "<group>"; };
 		775631C92619EC3E00D87910 /* HomeSplashScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeSplashScreen.xib; sourceTree = "<group>"; };
@@ -243,6 +249,54 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7731E80726304ED800E124BF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7731E80826304EEF00E124BF /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7731E80826304EEF00E124BF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7731E80926304EF700E124BF /* ViewModels */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7731E80926304EF700E124BF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7731E8152630885D00E124BF /* HomeViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7731E80A26304FD500E124BF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7731E80B26304FE900E124BF /* DataManager */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7731E80B26304FE900E124BF /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				7731E80C2630500500E124BF /* Influencers */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		7731E80C2630500500E124BF /* Influencers */ = {
+			isa = PBXGroup;
+			children = (
+				7731E80D2630606A00E124BF /* InfluencerDataManagerTests.swift */,
+			);
+			path = Influencers;
+			sourceTree = "<group>";
+		};
 		7768274125F7A4C600A88908 = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +334,8 @@
 		7768276625F7A4CA00A88908 /* Back2BasicsTests */ = {
 			isa = PBXGroup;
 			children = (
+				7731E80A26304FD500E124BF /* Common */,
+				7731E80726304ED800E124BF /* Modules */,
 				77E46EF0261A908A00848CBA /* Models */,
 				77E46ED8261A8CE300848CBA /* TestHelpers */,
 				77E46ED7261A747500848CBA /* SupportingFiles */,
@@ -636,6 +692,7 @@
 				77E46EC8261A736400848CBA /* MockNetworkIndicatorInterface.swift */,
 				77E46ECD261A73B400848CBA /* MockLocationManagerInterface.swift */,
 				77E46ED2261A740900848CBA /* MockInfluencerDataInterface.swift */,
+				7731E81A26308A4300E124BF /* MockHomeCoordinator.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -1038,8 +1095,11 @@
 				77E46EE2261A8D6100848CBA /* TestHelpers.swift in Sources */,
 				77E46EC9261A736400848CBA /* MockNetworkIndicatorInterface.swift in Sources */,
 				77E46EC4261A733500848CBA /* MockEnvironment.swift in Sources */,
+				7731E81B26308A4300E124BF /* MockHomeCoordinator.swift in Sources */,
 				77E46ED3261A740A00848CBA /* MockInfluencerDataInterface.swift in Sources */,
 				77E46EDA261A8D1B00848CBA /* RxHelpers.swift in Sources */,
+				7731E80E2630606A00E124BF /* InfluencerDataManagerTests.swift in Sources */,
+				7731E8162630885E00E124BF /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

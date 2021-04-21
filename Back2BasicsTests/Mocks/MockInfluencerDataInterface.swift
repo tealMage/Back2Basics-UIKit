@@ -12,13 +12,13 @@ import RxSwift
 
 class MockInfluencerDataInterface: InfluencerDataInterface {
 
-    var didCallFetchBillboards = false
+    var didCallFetchNearbyInfluencers = false
 
     var expectedResonse: [Influencer]?
     var errors: Error?
 
     func fetchNearbyInfluencers() -> Single<[Influencer]> {
-        didCallFetchBillboards = true
+        didCallFetchNearbyInfluencers = true
         return RxHelpers.singleWithMockValue(value: expectedResonse, error: errors)
     }
 }
